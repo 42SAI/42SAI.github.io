@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<head>
+<title>포항국제불빛축제</title>
+<style>
+body{
+	/*
+	background-color:#fbf9cc;
+	background-image:url(./work/before/img/bg-stripe01.png);
+	background-repeat:repeat-x;
+	*/
+	background-color: #442267;
+}
+* {
+   padding: 0;
+   margin: 0;
+  }
+
+  .clear {
+	clear: both;
+  }
+
+  div.rotate {
+	background-color:#442267;
+	border: 1px solid black;
+	transform:rotate(180deg); /*45도 회전*/
+	transition: width 2s,height 2s,transform 2s; /* 2초*/
+  }
+
+  div:hover {
+	transform:rotate(360deg);
+	transition-delay:1s;
+  }
+
+  header {
+   width: 1000px;
+   height: 100px;
+   margin-top: 10px;
+   border: solid 1px #cccccc;
+   background-color: #442267;
+  }
+
+  nav {
+   width: 900px;
+   height: 70px;
+   border-radius: solid 1px #cccccc;
+   padding-top: 20px;
+   background-color: #442267;
+    margin-left: 90px;
+  }
+
+  nav li {
+  	margin-left: 100px;
+	display: inline;
+	margin: 50px;
+  }
+  
+  span {
+	color:white;
+	font-weight:bold;
+  }
+
+  li {
+   list-style-type: none;
+  }
+
+  section {
+   margin-top: 10px;
+   border: solid 1px #cccccc;
+  }
+
+  aside {
+   float: right;
+   margin-top: 10px;
+   margin-left: 30px;
+   border: solid 1px #cccccc;
+   padding: 90px 120px;
+   background-color: #442267;
+  }
+
+  aside li {
+   margin-bottom: 30px;
+  }
+
+  footer {
+   width: 1000px;
+   height: 100px;
+   margin-top: 10px;
+   border: solid 1px #cccccc;
+   font-weight:bold;
+   color:white;
+   font-size:24px;
+   background-color: #442267;
+  }
+
+  #address {
+   float: left;
+   margin: 30px 0 0 20px;
+  }
+
+  #customer {
+   float: right;
+   margin: 0 0 0 180px;
+  }
+
+  #logo {
+   margin-top: 30px;
+   float:center;
+   font-size:30px;
+   color: #ff0066;
+  }
+
+  #top {
+   float: right;
+   margin: 30px 20px 0 0;
+  }
+#wrap{
+	width:798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #fff;
+}
+  #page {
+    width:1000px;
+    margin: auto;
+	padding: 40px 80px;
+	background-image:"img folder/pohang-page.png";
+	background-color: #442267;
+  }
+
+  #nac {
+  width: 200px;
+   height: 50px;
+   margin-top: 10px;
+   margin-left: 815px;
+   padding-top: 20px;
+   background-color: #442267;
+  }
+
+  #nacli {
+	display: inline;
+	margin: 85px;
+  }
+ 
+   #div1 {transition-timing-function:linear;}
+   #div2 {transition-timing-function:ease;}
+   #div3 {transition-timing-function:ease-in;}
+   #div4 {transition-timing-function:ease-out;}
+   #div5 {transition-timing-function:ease-in-out;}
+
+ .dropdown {
+	display: inline-block;
+  }
+
+ .dropdownContents {
+	display:none;
+	background-color: #9900cc
+	position:absolute;
+	font-weight:bold;
+	color:white;
+	width:250px;
+	padding-top:20px;
+ }
+  .dropdown:hover .dropdownContents {
+	display: block;
+  }
+
+#wrap{
+	width:798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #fff;
+}
+/*링크 색상 설정*/
+a{
+	color:#df4839;
+}
+
+a:hover{
+	color:#ff705b;
+}
+
+/*페이지 제목 설정*/
+h1{
+	color:#442267;
+	text-align:center;
+	font-size:250%;
+}
+
+h1 span{
+	color:#d0e35b;
+}
+
+/*큰 표제 설정*/
+h2{
+	color:#442267;
+	border:#94c8b1 1px dotted;
+	border-left:#442267 10px solid;
+	padding:5px 20px;
+	margin-bottom:0;
+}
+
+/*정보 데이터 표제 설정*/
+dt{
+	clear: left;
+	float: left;
+	font-weight:bold;
+}
+
+/*리드문 영역 설정*/
+#lead{
+	border-top:#442267 1px dotted;
+	border-bottom:#442267  1px dotted;
+	padding:15px;
+	text-align:center;
+}
+
+
+/*'더 보기'링크 설정*/
+.more{
+	text-align:right;
+	/*
+	background-image:url(./work/before/img/icon-arw01.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	*/
+	background:url(./work/before/img/icon-arw01.png) no-repeat right center;
+	padding-right:15px;
+	clear: left;
+}
+
+/*털, 성별 정보(공통)*//
+.cat-type{
+	font-size:80%;
+	font-weight:normal;
+}
+
+/*성별에 따른 색상 구분*/
+.cat-type.male{
+	color:#6600ff;
+}
+
+.cat-type.female{
+	color:#ff33cc;
+}
+
+.cat-type.fe{
+	color:#ff0066;
+}
+
+
+.ph{
+	float: left;
+	margin-right: 30px;
+}
+
+.data{
+	float: left;
+	width: 388px;
+}
+
+.frame{
+	margin:20px 0;
+	padding:35px 30px 30px 30px;
+	/*
+	background-image:url(./work/before/img/bg-stripe02.png) ;
+	background-repeat:repeat-x;
+	background-color:#fbf9cc;
+	*/
+	background:url(./work/before/img/bg-stripe02.png) repeat-x #fbf9cc;
+}
+</style>
+</head>
+<body>
+<div id='page'>
+ <div id ="nac">
+<a href="로그인.html"><img src="img folder/pohang-nac1.png" width="90" height="30" border="0" alt=""></a>
+<a href="회원가입.html"><img src="img folder/pohang-nac2.png" width="90" height="30" border="0" alt=""></a>
+</div>
+ <header>
+<a href="index.html"><img src="img folder/pohang-title.png" width="359" height="100" border="0" alt=""></a>
+ </header>
+ <div class='clear'>
+ <!-- float 속성 해제-->
+ <nav>
+ <ul>
+<div class="dropdown">
+<ul>
+<a href="축제 소개.html"><img src="img folder/pohang-nav1.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+<li>1번. 축제 정보</li>
+<li>2번. 축제 사진들 </li>
+<li>3번. 교통 안내</li>
+</ul>
+</div>
+<div class="dropdown">
+<ul>
+<a href="축제 일정.html"><img src="img folder/pohang-nav2.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+<li>1번. 5/31일(금) </li>
+<li>2번. 6/1일(토) </li>
+<li> 3번. 6/2일(일)</li>
+</div>
+</ul>
+</div>
+<div class="dropdown">
+<ul>
+<a href="불빛 퍼레이드.html"><img src="img folder/pohang-nav3.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+</div>
+</ul>
+</div>
+<div class="dropdown">
+<ul>
+<a href="퐝퐝 페스티벌.html"><img src="img folder/pohang-nav4.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+</div>
+</ul>
+</div>
+ </nav><br><br><br><br><br>
+</div>
+ <!-- float 속성 해제-->
+<div id="wrap">
+<h1>*포항 국제 불빛 퍼레이드*</h1><br><br>
+<p id="lead">포항 국제 불빛 퍼레이드에 대해서 설명하겠습니다!!</p>
+<br><br>
+<ul>
+<li><a href="#cats">불꽃 프로그램</a></li>
+<li><a href="#profile">불빛라디오</a></li>
+</ul>
+<br><br>
+<section id="cats">
+<h2>불꽃 프로그램</h2>
+
+<section id="subaru" class="frame">
+<h3>로얄 파이로테닉 <span class="cat-type fe"> ( 캐나다 )</span></h3>
+<p>RoYal Pyrotenic은 캐나다를 대표하는 역사를 가진 팀으로 매년 300회 이상의 불꽃 연출을 진행하는 메이저 업체입니다.
+캐나다 몬트리올 국제 불꽃대회에서 3번의 월드 챔피언 빛 16번의 Pretigious Awards 의 수상경력을 보유하고 있으며,
+예술성과 전문 기술을 결합하여 역동적이고 혁신적인 연화 연출을 보여주는 팀으로 포항불꽃축제에 처음으로 참가합니다.</p>
+<img src="img folder/pohang-bull1.png" width="320" height="300" border="0"  alt="스바루">
+</section>
+
+<section id="gureko" class="frame">
+<h3>마루타마야 <span class="cat-type fe"> ( 일본 )</span></h3>
+<p>Marutamaya는 1864년에 창업하여 일본의 전통적인 제조기술을 보유하고 있으며, 일본 특유의 장인정신이 발휘된 타상불꽃의 아름답고 정교한 연화연출이 두드러지는 팀입니다.
+일본 뿐만이 아니라 독일 ,마카오 다수의 국제행사에서의 연출 경험을 보유하고 있으며, 섬세하고 다이나믹한 연화 연출을 보여주는 팀 입니다.</p>
+<img src="img folder/pohang-bull2.png" width="320" height="300" border="0" alt="">
+</section>
+
+<section id="gureko" class="frame">
+<h3>한화<span class="cat-type fe"> ( 한국 )</span></h3>
+<p>한화는 한국 최고의 불꽃 연출력을 가진 기업으로 매년 포항국제불빛축제의 피날레를 장식하는 팀입니다. 2018년 한국을 대표하여 평창동계올림픽의 불꽃 연출을 진행하였으며 올해 2019 포항국제불빛축제에서 형산강의 특점을 활용하여 국내 최대 1km 규모의 와이드한 연출과 다양한 신규 불꽃 연출을 통해 웅장한 피날레를 선보일 예정입니다.</p>
+<img src="img folder/pohang-bull3.png" width="620" height="300" border="0" alt="">
+</section>
+</section>
+<br><br><br>
+
+<section id="profile">
+<h2>불빛라디오</h2>
+
+<section id="gureko" class="frame">
+<h3><span class="cat-type female">임채원 ( 아나운서 )</span></h3>
+<p>불빛을 기다리는 설렘 가득한 현장의 이야기로 함께합니다.</p>
+<img src="img folder/pohang-ana.png" width="320" height="300" border="0" alt="">
+</section>
+
+<section id="gureko" class="frame">
+<h3><span class="cat-type male">임진모 ( 음악평론가 )</span></h3>
+<p>불꽃쇼 속 음악의 해설과 숨은 스토리를 풀어줄 시간</p>
+<img src="img folder/pohang-ana2.png" width="320" height="300" border="0" alt="">
+</section>
+
+<section id="gureko" class="frame">
+<h3><span class="cat-type male">이장철 ( 한화 프로모션팀 )</span></h3>
+<p>평창 동계올림픽 개막식 불꽃 연출한 한화 불꽃프로모션팀과 함께 불꽃쇼를 보기 전 불꽃의 숨은 원리와 기술, 그리고 예술로써 알아가는 특별한 시간</p>
+<img src="img folder/pohang-ana3.png" width="320" height="300" border="0" alt="">
+</section>
+</section>
+<br><br><br>
+
+<p>Copyright &copy; UCHI NO NYAN'S All Rights Reserved.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<head>
+<title>포항국제불빛축제</title>
+<style>
+body{
+	/*
+	background-color:#fbf9cc;
+	background-image:url(./work/before/img/bg-stripe01.png);
+	background-repeat:repeat-x;
+	*/
+	background-color: #442267;
+}
+* {
+   padding: 0;
+   margin: 0;
+  }
+
+  .clear {
+	clear: both;
+  }
+
+  div.rotate {
+	background-color:#442267;
+	border: 1px solid black;
+	transform:rotate(180deg); /*45도 회전*/
+	transition: width 2s,height 2s,transform 2s; /* 2초*/
+  }
+
+  div:hover {
+	transform:rotate(360deg);
+	transition-delay:1s;
+  }
+
+  header {
+   width: 1000px;
+   height: 100px;
+   margin-top: 10px;
+   border: solid 1px #cccccc;
+   background-color: #442267;
+  }
+
+  nav {
+   width: 900px;
+   height: 70px;
+   border-radius: solid 1px #cccccc;
+   padding-top: 20px;
+   background-color: #442267;
+    margin-left: 90px;
+  }
+
+  nav li {
+  	margin-left: 100px;
+	display: inline;
+	margin: 50px;
+  }
+  
+  span {
+	color:white;
+	font-weight:bold;
+  }
+
+  li {
+   list-style-type: none;
+  }
+
+  section {
+   margin-top: 10px;
+   border: solid 1px #cccccc;
+  }
+
+  aside {
+   float: right;
+   margin-top: 10px;
+   margin-left: 30px;
+   border: solid 1px #cccccc;
+   padding: 90px 120px;
+   background-color: #442267;
+  }
+
+  aside li {
+   margin-bottom: 30px;
+  }
+
+  footer {
+   width: 1000px;
+   height: 100px;
+   margin-top: 10px;
+   border: solid 1px #cccccc;
+   font-weight:bold;
+   color:white;
+   font-size:24px;
+   background-color: #442267;
+  }
+
+  #address {
+   float: left;
+   margin: 30px 0 0 20px;
+  }
+
+  #customer {
+   float: right;
+   margin: 0 0 0 180px;
+  }
+
+  #logo {
+   margin-top: 30px;
+   float:center;
+   font-size:30px;
+   color: #ff0066;
+  }
+
+  #top {
+   float: right;
+   margin: 30px 20px 0 0;
+  }
+#wrap{
+	width:798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #fff;
+}
+  #page {
+    width:1000px;
+    margin: auto;
+	padding: 40px 80px;
+	background-image:"img folder/pohang-page.png";
+	background-color: #442267;
+  }
+
+  #nac {
+  width: 200px;
+   height: 50px;
+   margin-top: 10px;
+   margin-left: 815px;
+   padding-top: 20px;
+   background-color: #442267;
+  }
+
+  #nacli {
+	display: inline;
+	margin: 85px;
+  }
+ 
+   #div1 {transition-timing-function:linear;}
+   #div2 {transition-timing-function:ease;}
+   #div3 {transition-timing-function:ease-in;}
+   #div4 {transition-timing-function:ease-out;}
+   #div5 {transition-timing-function:ease-in-out;}
+
+ .dropdown {
+	display: inline-block;
+  }
+
+ .dropdownContents {
+	display:none;
+	background-color: #9900cc
+	position:absolute;
+	font-weight:bold;
+	color:white;
+	width:250px;
+	padding-top:20px;
+ }
+  .dropdown:hover .dropdownContents {
+	display: block;
+  }
+
+#wrap{
+	width:798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #fff;
+}
+/*링크 색상 설정*/
+a{
+	color:#df4839;
+}
+
+a:hover{
+	color:#ff705b;
+}
+
+/*페이지 제목 설정*/
+h1{
+	color:#442267;
+	text-align:center;
+	font-size:250%;
+}
+
+h1 span{
+	color:#d0e35b;
+}
+
+/*큰 표제 설정*/
+h2{
+	color:#442267;
+	border:#94c8b1 1px dotted;
+	border-left:#442267 10px solid;
+	padding:5px 20px;
+	margin-bottom:0;
+}
+
+/*정보 데이터 표제 설정*/
+dt{
+	clear: left;
+	float: left;
+	font-weight:bold;
+}
+
+/*리드문 영역 설정*/
+#lead{
+	border-top:#442267 1px dotted;
+	border-bottom:#442267  1px dotted;
+	padding:15px;
+	text-align:center;
+}
+
+
+/*'더 보기'링크 설정*/
+.more{
+	text-align:right;
+	/*
+	background-image:url(./work/before/img/icon-arw01.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	*/
+	background:url(./work/before/img/icon-arw01.png) no-repeat right center;
+	padding-right:15px;
+	clear: left;
+}
+
+/*털, 성별 정보(공통)*//
+.cat-type{
+	font-size:80%;
+	font-weight:normal;
+}
+
+/*성별에 따른 색상 구분*/
+.cat-type.male{
+	color:#2793a7;
+}
+
+.cat-type.female{
+	color:#ff33cc;
+}
+
+
+
+.ph{
+	float: left;
+	margin-right: 30px;
+}
+
+.data{
+	float: left;
+	width: 388px;
+}
+
+.frame{
+	margin:20px 0;
+	padding:35px 30px 30px 30px;
+	/*
+	background-image:url(./work/before/img/bg-stripe02.png) ;
+	background-repeat:repeat-x;
+	background-color:#fbf9cc;
+	*/
+	background:url(./work/before/img/bg-stripe02.png) repeat-x #fbf9cc;
+}
+</style>
+</head>
+<body>
+<div id='page'>
+ <div id ="nac">
+<a href="로그인.html"><img src="img folder/pohang-nac1.png" width="90" height="30" border="0" alt=""></a>
+<a href="회원가입.html"><img src="img folder/pohang-nac2.png" width="90" height="30" border="0" alt=""></a>
+</div>
+ <header>
+<a href="index.html"><img src="img folder/pohang-title.png" width="359" height="100" border="0" alt=""></a>
+ </header>
+ <div class='clear'>
+ <!-- float 속성 해제-->
+ <nav>
+ <ul>
+<div class="dropdown">
+<ul>
+<a href="축제 소개.html"><img src="img folder/pohang-nav1.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+<li>1번. 축제 정보</li>
+<li>2번. 축제 사진들 </li>
+<li>3번. 교통 안내</li>
+</ul>
+</div>
+<div class="dropdown">
+<ul>
+<a href="축제 일정.html"><img src="img folder/pohang-nav2.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+<li>1번. 5/31일(금) </li>
+<li>2번. 6/1일(토) </li>
+<li> 3번. 6/2일(일)</li>
+</div>
+</ul>
+</div>
+<div class="dropdown">
+<ul>
+<a href="불빛 퍼레이드.html"><img src="img folder/pohang-nav3.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+</div>
+</ul>
+</div>
+<div class="dropdown">
+<ul>
+<a href="퐝퐝 페스티벌.html"><img src="img folder/pohang-nav4.png" width="200" height="50" border="0" alt=""></a>
+<div class="dropdownContents" class="dc">
+</div>
+</ul>
+</div>
+ </nav><br><br><br><br><br>
+</div>
+ <!-- float 속성 해제-->
+<div id="wrap">
+<h1>*포항 퐝퐝 페스티벌*</h1>
+<p id="lead">포항 퐝퐝 페스티벌에 대해서 설명하겠습니다!!</p>
+
+
+<section id="cats">
+<h2>퐝퐝 페스티벌</h2>
+
+<section id="subaru" class="frame">
+<h3>이승환<span class="cat-type male"> (30년차 "어린 왕자" 대가수)</span></h3>
+<p>1989년에 데뷔, 어린 왕자라는 예명으로 유명한 싱어송라이터이며 올해로 데뷔 30주년을 맞이했다.90년대의 대표적인 뮤지션이자 콘서트에 대한 생동감 넘치는 열정으로 공연의 신이라는 별명을 가지고 있다.이승환 음악의 시작점은 록 음악이었고, 메이저 데뷔는 발라드로 시작했으며, 오태호와의 콤비로 엄청난 대중성을 발휘하며 큰 인기를 얻었다. 또한 싱어송라이터로도 활발한 활동 중이며, 매 앨범마다 자작곡으로 꾸준히 트랙을 채우는 가수이다.</p>
+<img src="img folder/pohang1.png" width="320" height="300" border="0" alt="스바루">
+</section>
+
+<section id="gureko" class="frame">
+<h3>데이브레이크<span class="cat-type male"> (당신의 마음을 사로잡을 국민 밴드)</span></h3>
+<p>음악 안에서 자유롭다 라는 모토로 다양한 장르의 음악을 그들만의 스타일로 녹여내는 그룹
+2007년 데뷔를 시작으로 좋다, 들었다 놨다 등의 대표곡들로 주목받으며 연이은 단독 공연 매진
+페스티벌과 행사 섭의 1순위 밴드로 자리매김했다. 2016년 발매한 정규 4집 WITH의 타이틀곡 꽃길만 걷게 해줄게로 전국에 꽃길 열풍을 몰고 오면서 국민밴드로 거듭났다. 또한 Beautiful Mint, Life2018 최고의 아티스트 선정되었고, 유투브의  신 대도서관과의 콜라보 등등 여러 활동들을 하고있다.</p>
+
+<img src="img folder/pohang2.png" width="320" height="400" border="0" alt="">
+</section>
+
+<section id="gureko" class="frame">
+<h3>모트<span class="cat-type female"> (풋풋한 싱어송 라이터)</span></h3>
+<p>해리포터의 볼드모트에서 이름을 딴 엉뚱발랄한 싱어송라이터이다.네이버 뮤지선 리그를 통해주목 받고 있는 신인 싱어송 라이터 모트는 2016년 모트란 이름으로 활동을 시작했고 2017년 9월 첫 싱글 rikin 을 발매하여 본격적으로 활동을 시작헀다. 낯을 많이 가리지만 음악은 건방진 낯이방져 아티스트로 귀여운 외모와 대조되는 깊이있는 목소리도 가지고 있다.</p>
+
+<img src="img folder/pohang4.png" width="320" height="300" border="0" alt="">
+
+</section>
+
+<section id="subaru" class="frame">
+<h3>설<span class="cat-type male"> (인디 슈퍼 루키)</span></h3>
+<p>매력적인 음색을 통해 브리티시 룩, 블루스를 기반으로 다양한 장르의 음악을 그들만의 스타일로 녹여내는 4인조 밴드이다. 리더 설호승을 중심으로 고등학생 때부터 알고 지내온 이한빈, 오명석, 김도연의 98년생 동갑내기 들로 구성되어 있다.</p>
+
+<img src="img folder/pohang5.png" width="320" height="300" border="0" alt="">
+>
+</section>
+
+<section id="subaru" class="frame">
+<h3>오리엔탈 쇼커스<span class="cat-type male"> (버라이어티한 사운드)</span></h3>
+<p>재즈를 기반으로 한 대중적인 멜로디의 자작곡으로 활동하는 밴드로 집시기타와 클라리넷 신스베이스 등 다양한 음색을 지닌 악기와 효과음일렉트로 스윙리프들을 가미한 레트로 팝 일렉트로 스윙 스카레게 사운드를 구현한다.</p>
+
+<img src="img folder/pohang6.png" width="320" height="300" border="0" alt="">
+
+</section>
+
+
+<section id="nezuko" class="frame">
+<h3>양다일<span class="cat-type male">(애절 보이스의 소유자）</span></h3>
+<p>본인 최대의 장점인 알앤비와 팝적인 감수성으로 많은 아티스트들과의 활발한 협업을 진행하면서다양한 팬 층을 쌓고 있을 뿐 아니라 아티스트들이ㅡ 워너비 아티스트로 손꼽히고 있다.
+그 결과로 2017년 12월에 발매한 정규앨범 inside의 타이틀 곡 미안해는 1년 넘게 차트에 장기 집권했다.</p>
+
+<img src="img folder/pohang3.png" width="320" height="300" border="0" alt="">
+
+<section id="nezuko" class="frame">
+<h3>레인보우 노트<span class="cat-type female">(다채로운 색깔의 그룹）</span></h3>
+<p>보컬리스트 안슬희와 키보디스트 이사라의 독특하면서도 세련미가 담긴 여성 듀오 시티팝 그룹이다.팀 이름 그대로 다양한 색깔을 그들만의 그림으로 독특하게 표현해낸다.</p>
+
+<img src="img folder/pohang7.png" width="320" height="300" border="0" alt="">
+
+</section>
+</section>
+
+<p>Copyright &copy; UCHI NO NYAN'S All Rights Reserved.</p>
+</div>
+</body>
+</html>
