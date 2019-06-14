@@ -208,7 +208,7 @@
  <div class='clear'></div>
  <!-- float 속성 해제-->
  <section>
-<img src="img folder/pohang-main.PNG" width="460" height="420" border="0" alt="">
+<img src="img folder/pohang-main.png" width="460" height="420" border="0" alt="">
  </section>
  <aside>
  <ul>
@@ -218,7 +218,7 @@
  </ul>
  </aside>
    <section>
-<img src="img folder/pohang-footer.PNG" width="1000" height="200" border="0" alt="">
+<img src="img folder/pohang-footer.png" width="1000" height="200" border="0" alt="">
    </section>
     <div class='clear'></div>
  <footer>
